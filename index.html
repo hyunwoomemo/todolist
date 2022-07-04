@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <input type="checkbox" id="fullpage">
+    <label for="fullpage" id="fullLabel">✖️</label>
+    <section id="first-page">
+        <header id="header">
+            <form id="search-form" class="hidden">
+                <input type="text" required placeholder="네이버 검색" id="naver-input">
+            </form>
+            <form id="google-form" class="hidden">
+                <input type="text" required placeholder="구글 검색" id="google-input">
+            </form>
+            <form id="mdn-form" class="hidden">
+                <input type="text" required placeholder="mdn 검색" id="mdn-input">
+            </form>
+            <form id="w3schools-form" class="hidden">
+                <input type="text" required placeholder="w3schools 검색" id="w3schools-input">
+            </form>
+            <h2 id="clock" class="">
+            </h2>
+            <input type="checkbox" class="check" id="check">
+            <label for="check" id="darkmode" class=""></label>
+            <p id="emoji">🌙</p>
+            <div class="logowrapper">
+                <span id="naver" data-text="Naver">Naver</span>
+                <span id="google" data-text="Google">Google</span>
+                <span id="mdn" data-text="MDN">MDN</span>
+                <span id="w3schools" data-text="W3Schools">W3Schools</span>
+            </div>
+        </header>
+    <div class="contentswrapper">
+        <form id="login-form">
+            <input type="text" placeholder="What is your name? 😀" required maxlength="15">
+        </form>
+<section id="wrapper" class="hidden">
+    <h1 id="greeting"></h1>
+    <section class="add-delete">
+    <form id="todo-form">
+        <input type="text" placeholder="Write and Press enter! ✏️" required>
+    </form>
+    <section class="addfunction hidden">
+        <button id="all-delete">전체 삭제</button>
+        <h5 id="todo-length"></h5>
+    </section>
+    </section>
+    <ul id="todo-list" class="list">
+    </ul>
+</section>
+</div>
+</section>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/headerfunction.js"></script>
+    <script src="js/potal.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/fullpage.js"></script>
+</body>
+</html>

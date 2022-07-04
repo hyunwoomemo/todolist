@@ -1,0 +1,1 @@
+const removeBgiBtn = document.querySelector("#removebg");
