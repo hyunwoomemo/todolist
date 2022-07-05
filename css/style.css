@@ -42,7 +42,7 @@ body.fade {
     --bordercolor:rgba(0, 0, 0, 0.2);
     --timealertcolor:#b9db68;
     --wrapperbgc : #f5f5f5;
-    --text-shadow : 0 2px 10px rgba(0,0,0,1);
+    --text-shadow : 0 0 5px rgba(100,200,0,1);
     --box-shadow : 0 0px 15px rgba(0,0,0,.5)
 }
 :root[color-theme= "dark"] {
@@ -56,7 +56,7 @@ body.fade {
     --bordercolor:rgba(255, 255, 255, 0.2);
     --timealertcolor:#c92d51;
     --wrapperbgc : #282828;
-    --text-shadow : 0 2px 10px rgba(255,255,255,1);
+    --text-shadow : 0 0 5px rgb(49, 186, 224);
     --box-shadow : 0 0px 15px rgba(255,255,255,.5)
 }
 
@@ -89,6 +89,7 @@ body.fade {
     color: var(--color);
     font-size: 2rem;
     text-align: center;
+    outline: none;
 }
 
 #login-form input:hover::placeholder {
@@ -168,10 +169,6 @@ body.fade {
     padding: 0 10px;
 }
 
-#todo-form:focus {
-    background-color: rebeccapurple;
-}
-
 #todo-form input{
     text-align: center;
     padding: 10px;
@@ -181,6 +178,8 @@ body.fade {
     font-size: 1rem;
     background-color: var(--background);
     color: var(--color);
+    outline: none;
+    transition: 0.3s ease-out;
 }
 
 #header > form {
@@ -204,6 +203,7 @@ header input {
     font-size: 1rem;
     background-color: var(--background);
     color: var(--color);
+    outline: none;
 }
 
 #naver-input {
